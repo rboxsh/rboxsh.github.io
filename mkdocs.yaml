@@ -1,0 +1,18 @@
+# Project information
+site_name: rootbox
+
+nav:
+    - Home: index.md
+
+theme:
+    name: material
+    language: en
+    palette:
+        primary: 'blue'
+        accent: 'green'
+
+markdown_extensions:
+    - codehilite:   # This adds the "Copy to clipboard"
+    - admonition:
+    - pymdownx.details:
+    - pymdownx.superfences:
