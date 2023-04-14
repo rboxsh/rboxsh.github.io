@@ -1,1 +1,1 @@
-Hello world
+Rootbox is a tool for Linux and WSL that allows regular (unprivileged) users to deploy applications in a portable and reproducible way.

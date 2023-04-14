@@ -3,7 +3,9 @@ site_name: rootbox
 
 nav:
     - Home: index.md
-
+    - Getting Started:
+        - Installation: getting-started/installation.md
+    - References: references.md
 theme:
     name: material
     language: en
@@ -11,8 +13,9 @@ theme:
         primary: 'blue'
         accent: 'green'
 
-markdown_extensions:
-    - codehilite:   # This adds the "Copy to clipboard"
-    - admonition:
-    - pymdownx.details:
-    - pymdownx.superfences:
+copyright:  Copyright © Contributors to the RootBox project
+
+plugins:
+  - mkdocs-simple-hooks:
+      hooks:
+        on_post_build: "docs.hooks:copy_get"
